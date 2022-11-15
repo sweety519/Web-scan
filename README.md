@@ -1,8 +1,4 @@
-[![GitHub issues](https://img.shields.io/github/issues/skavngr/rapidscan.svg?color=%23ff0000)](https://github.com/skavngr/rapidscan/issues)
-[![GitHub issues](https://img.shields.io/github/issues-closed/skavngr/rapidscan.svg?color=%2300cc00)](https://github.com/skavngr/rapidscan/issues)
-[![GitHub forks](https://img.shields.io/github/forks/skavngr/rapidscan.svg?color=%23ffff00)](https://github.com/skavngr/rapidscan/network)
-[![GitHub stars](https://img.shields.io/github/stars/skavngr/rapidscan.svg?color=%23ff3300)](https://github.com/skavngr/rapidscan/stargazers)
-[![GitHub license](https://img.shields.io/github/license/skavngr/rapidscan.svg?color=%230000ff)](https://github.com/skavngr/rapidscan/blob/master/LICENSE)
+
 
 # :red_square: RapidScan v1.2 - _The Multi-Tool Web Vulnerability Scanner_
 _**RapidScan has been ported to Python3 i.e. v1.2**. The Python2.7 codebase is available on v1.1 releases section. Download and use it if you still haven't upgraded to Python 3. Kindly note that the v1.1 (Python2.7) will not be enhanced further._
@@ -46,13 +42,13 @@ _**RapidScan has been ported to Python3 i.e. v1.2**. The Python2.7 codebase is a
 
 ## Requirements
 - **Python 3**
-- Kali OS (_**Preferred**, as it is shipped with almost all the tools_)
+- Kali OS or linux(_**Preferred**, as it is shipped with almost all the tools_)
 - Tested with Parrot & Ubuntu Operating Systems.
 
 ## Usage 
  `python3 rapidscan.py example.com`
 
-https://user-images.githubusercontent.com/6489729/138737524-9c4dc567-ec78-40b4-9a7b-8ff52d5dc98b.mp4
+
 
 
 ## Installation
@@ -60,16 +56,8 @@ https://user-images.githubusercontent.com/6489729/138737524-9c4dc567-ec78-40b4-9
 Alternatively, your can install the `rapidscan` python module with `pip`. This will create a link for `rapidscan` in your PATH. 
 
 ```
-git clone https://github.com/skavngr/rapidscan.git /opt/
-cd /opt/rapidscan
+git clone https://github.com/sweety519/rapidscan.git /
+cd rapidscan
 python3 -m pip install .
 ```
 
-### Docker Support
-Under development.
-
-## Contribution
-- Create your feature branch: `git checkout -b my-new-feature`
-- Commit your changes: `git commit -am 'Add some feature'`
-- Push to the branch: `git push origin my-new-feature`
-- Submit a pull request.
