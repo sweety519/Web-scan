@@ -1,7 +1,7 @@
 
 
-# :red_square: RapidScan v1.2 - _The Multi-Tool Web Vulnerability Scanner_
-_**RapidScan has been ported to Python3 i.e. v1.2**. The Python2.7 codebase is available on v1.1 releases section. Download and use it if you still haven't upgraded to Python 3. Kindly note that the v1.1 (Python2.7) will not be enhanced further._
+# :red_square: WebScan v1.2 - _The Multi-Tool Web Vulnerability Scanner_
+_**WebScan has been ported to Python3 i.e. v1.2**. The Python2.7 codebase is available on v1.1 releases section. Download and use it if you still haven't upgraded to Python 3. Kindly note that the v1.1 (Python2.7) will not be enhanced further._
 
 ## Evolution:
 > It is quite a fuss for a pentester to perform _**binge-tool-scanning**_ (_running security scanning tools one after the other_) sans automation. Unless you are a pro at automating stuff, it is a herculean task to perform binge-scan for each and every engagement. The ultimate goal of this program is to solve this problem through automation; viz. **running multiple scanning tools to discover vulnerabilities, effectively judge false-positives, collectively correlate results** and **saves precious time**; all these under one roof.<p>Enter **RapidScan**.
@@ -24,9 +24,7 @@ _**RapidScan has been ported to Python3 i.e. v1.2**. The Python2.7 codebase is a
 - **on the run metasploit auxilliary modules** to discover more vulnerabilities. (_**under development**_)
 
 ---
-### FYI:
-- _program is still under development, **works** and currently supports **80** vulnerability tests._
-- _parallel processing is not yet implemented, may be coded as more tests gets introduced._
+
 
 ## Vulnerability Checks
 - :heavy_check_mark: DNS/HTTP Load Balancers & Web Application Firewalls.
@@ -45,18 +43,18 @@ _**RapidScan has been ported to Python3 i.e. v1.2**. The Python2.7 codebase is a
 - Tested with Parrot & Ubuntu Operating Systems.
 
 ## Usage 
- `python3 rapidscan.py example.com`
+ `python3 webscan.py example.com`
 
 
 
 
 ## Installation
 
-Alternatively, your can install the `rapidscan` python module with `pip`. This will create a link for `rapidscan` in your PATH. 
+Alternatively, your can install the `webscan` python module with `pip`. This will create a link for `webscan` in your PATH. 
 
 ```
-git clone https://github.com/sweety519/rapidscan.git /
-cd rapidscan
+git clone https://github.com/sweety519/webscan.git /
+cd webscan
 python3 -m pip install .
 ```
 
