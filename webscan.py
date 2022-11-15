@@ -131,11 +131,11 @@ def vul_remed_info(v1,v2,v3):
 def helper():
         print(bcolors.OKBLUE+"Information:"+bcolors.ENDC)
         print("------------")
-        print("\t./rapidscan.py example.com: Scans the domain example.com.")
-        print("\t./rapidscan.py example.com --skip dmitry --skip theHarvester: Skip the 'dmitry' and 'theHarvester' tests.")
-        print("\t./rapidscan.py example.com --nospinner: Disable the idle loader/spinner.")
-        print("\t./rapidscan.py --update   : Updates the scanner to the latest version.")
-        print("\t./rapidscan.py --help     : Displays this help context.")
+        print("\t./webscan.py example.com: Scans the domain example.com.")
+        print("\t./webscan.py example.com --skip dmitry --skip theHarvester: Skip the 'dmitry' and 'theHarvester' tests.")
+        print("\t./webscan.py example.com --nospinner: Disable the idle loader/spinner.")
+        print("\t./webscan.py --update   : Updates the scanner to the latest version.")
+        print("\t./webscan.py --help     : Displays this help context.")
         print(bcolors.OKBLUE+"Interactive:"+bcolors.ENDC)
         print("------------")
         print("\tCtrl+C: Skips current test.")
@@ -169,7 +169,7 @@ def logo():
                                      /
                      """+bcolors.ENDC+"""(The Multi-Tool Web Vulnerability Scanner)
 
-                     Check out our new software, """+bcolors.BG_LOW_TXT+"""NetBot"""+bcolors.ENDC+""" for simulating DDoS attacks - https://github.com/skavngr/netbot
+                     
     """
     print(logo_ascii)
     print(bcolors.ENDC)
@@ -210,7 +210,7 @@ class Spinner:
                     sys.stdout.flush()
 
         except (KeyboardInterrupt, SystemExit):
-            print("\n\t"+ bcolors.BG_ERR_TXT+"RapidScan received a series of Ctrl+C hits. Quitting..." +bcolors.ENDC)
+            print("\n\t"+ bcolors.BG_ERR_TXT+"WebScan received a series of Ctrl+C hits. Quitting..." +bcolors.ENDC)
             sys.exit(1)
 
     def start(self):
@@ -225,7 +225,7 @@ class Spinner:
             self.busy = False
             time.sleep(self.delay)
         except (KeyboardInterrupt, SystemExit):
-            print("\n\t"+ bcolors.BG_ERR_TXT+"RapidScan received a series of Ctrl+C hits. Quitting..." +bcolors.ENDC)
+            print("\n\t"+ bcolors.BG_ERR_TXT+"WebScan received a series of Ctrl+C hits. Quitting..." +bcolors.ENDC)
             sys.exit(1)
 
 # End ofloader/spinner class
@@ -1425,10 +1425,10 @@ elif args_namespace.update:
     newversion_hash = newversion_hash.strip()
     if oldversion_hash == newversion_hash :
         clear()
-        print("\t"+ bcolors.OKBLUE +"You already have the latest version of RapidScan." + bcolors.ENDC)
+        print("\t"+ bcolors.OKBLUE +"You already have the latest version of WebScan." + bcolors.ENDC)
     else:
         clear()
-        print("\t"+ bcolors.OKGREEN +"RapidScan successfully updated to the latest version." +bcolors.ENDC)
+        print("\t"+ bcolors.OKGREEN +"WebScan successfully updated to the latest version." +bcolors.ENDC)
     spinner.stop()
     sys.exit(1)
 
@@ -1451,7 +1451,7 @@ elif args_namespace.target:
             output, err = p.communicate()
             val = output + err
         except:
-            print("\t"+bcolors.BG_ERR_TXT+"RapidScan was terminated abruptly..."+bcolors.ENDC)
+            print("\t"+bcolors.BG_ERR_TXT+"WebScan was terminated abruptly..."+bcolors.ENDC)
             sys.exit(1)
         
         # If the tool is not found or it's part of the --skip argument(s), disabling it
@@ -1472,7 +1472,7 @@ elif args_namespace.target:
         clear()
     unavail_tools_names = list(set(unavail_tools_names))
     if len(unavail_tools_names) == 0:
-        print("\t"+bcolors.OKGREEN+"All Scanning Tools are available. Complete vulnerability checks will be performed by RapidScan."+bcolors.ENDC)
+        print("\t"+bcolors.OKGREEN+"All Scanning Tools are available. Complete vulnerability checks will be performed by WebScan."+bcolors.ENDC)
     else:
         print("\t"+bcolors.WARNING+"Some of these tools "+bcolors.BADFAIL+str(unavail_tools_names)+bcolors.ENDC+bcolors.WARNING+" are unavailable or will be skipped. RapidScan will still perform the rest of the tests. Install these tools to fully utilize the functionality of RapidScan."+bcolors.ENDC)
     print(bcolors.BG_ENDL_TXT+"[ Checking Available Security Scanning Tools Phase... Completed. ]"+bcolors.ENDC)
