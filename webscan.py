@@ -5,9 +5,9 @@
 #                             / ( (//)/(/__)( (//)
 #                                  /
 #
-# Author     : Shankar Narayana Damodaran
-# Tool       : RapidScan v1.2
-# Usage      : python3 rapidsan.py example.com
+# Author     : Sai_udiga
+# Tool       : WebScan v1.2
+# Usage      : python3 Websan.py example.com
 # Description: This scanner automates the process of security scanning by using a
 #              multitude of available linux security tools and some custom scripts.
 #
