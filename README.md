@@ -38,7 +38,6 @@ _**RapidScan has been ported to Python3 i.e. v1.2**. The Python2.7 codebase is a
 - :heavy_check_mark: Open Directory/File Brute Forcing.
 - :heavy_check_mark: Shallow XSS, SQLi and BSQLi Banners.
 - :heavy_check_mark: Slow-Loris DoS Attack, LFI (_Local File Inclusion_), RFI (_Remote File Inclusion_) & RCE (_Remote Code Execution_).
-- & more coming up...
 
 ## Requirements
 - **Python 3**
